@@ -33,14 +33,14 @@ const App = () => {
             <Route path="error-404" element={<Error404Page />} />
             <Route path="error-403" element={<Error403Page />} />
             <Route path="error-500" element={<Error500Page />} />
-            <Route path="error-503" element={<Error503Page />} />
-            <Route path="sign-in" element={<SignInPage />} />
-            <Route path="sign-up" element={<SignUpPage />} />
+            <Route path="error-503" element={<Error503Page />} />                        
             <Route path="form-basic" element={<FormBasicPage />} />
             <Route path="form-wizard" element={<FormWizardPage />} />
             <Route path="calendar" element={<CalendarPage />} />
           </Route>
           <Route path="*" element={<Error404Page />} />
+          <Route path="sign-in" element={<SignInPage />} />
+          <Route path="sign-up" element={<SignUpPage />} />
         </Routes>
       </CustomProvider>
     </IntlProvider>

@@ -58,17 +58,17 @@ export const appNavs = [
     title: 'Authentication',
     icon: <Icon as={MdFingerprint} />,
     children: [
-      {
-        eventKey: 'sign-in',
-        title: 'Sign In',
-        to: '/sign-in'
-      },
+      // {
+      //   eventKey: 'sign-in',
+      //   title: 'Sign In',
+      //   to: '/sign-in'
+      // },
 
-      {
-        eventKey: 'sign-up',
-        title: 'Sign Up',
-        to: '/sign-up'
-      },
+      // {
+      //   eventKey: 'sign-up',
+      //   title: 'Sign Up',
+      //   to: '/sign-up'
+      // },
       {
         eventKey: 'error403',
         title: 'Error 403',
