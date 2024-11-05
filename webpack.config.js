@@ -65,7 +65,7 @@ module.exports = {
   },
   plugins: [
     new HtmlwebpackPlugin({
-      title: 'Admin Dashboard Template',
+      title: 'Admin Dashboard',
       filename: 'index.html',
       template: './src/index.html',
       inject: true,
