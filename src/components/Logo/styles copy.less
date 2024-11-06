@@ -1,5 +1,4 @@
 .rsuite-logo {
-  /* Thêm màu sắc và fill rule cho từng lớp */
   .cls-1 {
     fill: #6292f0;
   }
@@ -11,25 +10,18 @@
     fill-rule: evenodd;
   }
 
-  /* Hiệu ứng vẽ cho từng polyline */
   .polyline-limb {
     animation: limbLineMove 3s ease-out 1;
-    stroke: #ec727d;
-    stroke-width: 3;
   }
   .polyline-axis {
     animation: axisLineMove 2s ease-out 1;
-    stroke: #6292f0;
-    stroke-width: 3;
   }
 
-  /* Hiệu ứng cho các circle */
   .circle {
     animation: circleMove 2s ease-out 1;
   }
 }
 
-/* Điều chỉnh animation logo */
 .logo-animated {
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -43,7 +35,6 @@
   animation-name: logo-bounce-in;
 }
 
-/* Keyframes cho hiệu ứng bounce-in của logo */
 @keyframes logo-bounce-in {
   from,
   20%,
@@ -76,7 +67,6 @@
   }
 }
 
-/* Keyframes cho hiệu ứng vẽ đường chính (polyline-axis) */
 @keyframes axisLineMove {
   0% {
     stroke-dasharray: 0, 500;
@@ -86,7 +76,6 @@
   }
 }
 
-/* Keyframes cho hiệu ứng vẽ các đoạn polyline-limb */
 @keyframes limbLineMove {
   0% {
     stroke-dasharray: 0, 200;
@@ -100,15 +89,11 @@
   }
 }
 
-/* Keyframes cho hiệu ứng vòng tròn */
 @keyframes circleMove {
   0% {
     fill: transparent;
   }
   50% {
-    fill: #6292f0;
-  }
-  100% {
-    fill: #6292f0;
+    fill: transparent;
   }
 }

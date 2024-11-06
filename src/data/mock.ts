@@ -2,10 +2,10 @@ import { faker } from '@faker-js/faker/locale/en';
 
 export function mockUsers(length: number) {
   const createRowData = rowIndex => {
-    const firstName = faker.name.firstName();
+    const gender = faker.name.sex() as 'female' | 'male';
+    const firstName = faker.name.firstName(gender);
     const lastName = faker.name.lastName();
-    const gender = faker.name.gender(true) as 'female' | 'male';
-    const name = faker.name.findName(firstName, lastName, gender);
+    const name = `${firstName} ${lastName}`;
     const avatar = faker.image.avatar();
 
     const city = faker.address.city();
