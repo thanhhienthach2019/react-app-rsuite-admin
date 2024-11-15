@@ -79,6 +79,7 @@ module.exports = {
       chunkFilename: '[id].css'
     }),
     new webpack.DefinePlugin({
+      'process.env.REACT_APP_SERVER_URL': JSON.stringify(process.env.REACT_APP_SERVER_URL),
       'process.env.REACT_APP_MIXPANEL_TOKEN': JSON.stringify(process.env.REACT_APP_MIXPANEL_TOKEN),
   }),
   ]
